@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Forex Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Home</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Introduction</a></li>
+            <li class="active"><a href="CodingProject1.html">Forex Calculator</a></li>
+            <li><a href="GameProject1.html">Falling Game</a></li>
+            <li><a href="GamingProject2.html">Space Shooter Game</a></li>
+            <li><a href="WrittenArticle.html">Article</a></li>
+            <li><a href="About%20Me.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Post -->
+        <section>
+            <header class="major">
+                <span class="date">Project 1</span>
+                <h1>Foreign Exchange<br />
+                    Calculator</h1>
+                <p>This program, on the surface, can seem quite simple, but the inner working can be quite complex.<br />
+                    The program utilizes different imported and base functions within python to create <br />
+                    a efficient and robust program.</p>
+            </header>
+            <div class="image main"><img src="images/CodeProjectMain1.gif" alt="" />
+            <p> With a plethora of uses, the foreign exchange calculator, whilst simple on the surface, employs looping, subroutines, import functions, Calculations etc.
+                I decided to develop a foreign exchange calculator as I knew it would be complex and would test my skills and abilities to prepare myself for an exam I was
+                sitting nearer the time.
+                I used python to create this program and used a application called Pycharm as my preferred IDE to write my code.
+                I tried to challenge myself by making the scenario more realistic by adding some requirements that I would have to meet.
+                For example, an employee discount that would be added to the final total.<br />
+                <br />
+                The development process started by setting myself particular goals. These goals consisted of:
+                <ul>
+                    <li>Writing a receipt to the user</li>
+                    <li>Having the user be able to select between 5 different currencies that they can convert to</li>
+                    <li>Have a transaction fee added depending on the amount of GBP the user wants to exchange</li>
+                    <li>A max conversion rate</li>
+                    <li>An employee discount that can be added when selected by the user.</li>
+                </ul>
+                I wanted to have the program be fully functional and as efficient as possible. I started by planning using psuedocode in a word document and decided I would need a main loop which would enclose 4 "sub-loops"
+                each with their own purpose and with included validation. To keep it simple, I gave them each one letter names of V (for the main loop), W, X, Y and Z. V, as stated, is the main loop which contains the
+                other 4 loops. Its main purpose though is to keep the program operational as long as its left on. W is the introduction, where the user will be asked if they want to use the converter. They can then either
+                say "yes (Y)" or "no (N)" which will then either allow them to move on to "X" or give a goodbye message. X asks the user for the amount of GBP they would like to exchange. This loop includes one of the
+                first goals I wanted to achieve which was to include a max conversion rate to which I set to "2500". If the amount input is less it will then move on to "Y". Y is where the main calculations take place.
+                It allows the user to convert to "DOLLARS (USD), EUROS (EUR), REAL (BRL), YEN (JPY) and LIRA (TRY)" which then meets one of my other goals of having 5 different currencies to convert to. Once they have chosen,
+                the program then moves to the final loop, Z. Z is where the user will be asked if they are a employee or not which will calculate a discount that will be added onto the final total which again meets one of the
+                goals I set of having an employee discount. The receipt is created via a subroutine which is then called at the end of the program under the name of "receipt()", which will allow the user to have a printable and
+                savable copy of their conversion. The transaction fee is calculated outside the "sub-loops" and inside the main V loop. It simply just compares the amount of GBP the user input to find the fee that would need to
+                be added on top of their final total.
+                <br />
+                <br />
+                When I finished with design and started coding, I realised I wanted to have the program to have more of a personal touch. So I imported the time, datetime and random function. I used the time function to allow
+                stops between some of the outputs so its easier for the user to read. I also used it and the random function to create a subroutine which made it look like the program actually needed time to calculate (mainly included just for aesthetics).
+                I also used it again for the "type" subroutine which would make it look like the computer was typing the outputs out to you as the user. The datetime function was just used to display the date and time at the top of
+                the program to make it seem more realistic (again just for aesthetics).
+                <br />
+                <br />
+                Have a look at the code yourself below, just click the button.
+
+            </div>
+        </section>
+        <ul class="actions special">
+            <p><a href="Code%20Extended.html" class="button large">CHECK IT OUT</a></p>
+        </ul>
+    </div>
+
+
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
